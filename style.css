@@ -1,0 +1,188 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+body {
+
+}
+canvas{
+
+ position:fixed ;
+ background:black;
+ top:0;
+ left:0;
+}
+button{
+ z-index:1;
+ position:absolute ;
+ top :300px;
+ left:200px;
+ height:100px;
+ width:100px;
+ display:none;
+}
+
+img{
+ display:none;
+}
+div{
+ z-index:1;
+ height:100vh;
+ width:100vh;
+ position:fixed;
+ background:white;
+}
+
+p{
+ position:absolute ;
+ font-size:100px;
+  left: 30px;
+ top: 200px;
+ color:green;
+}
+
+/* /blinking stars/         */
+.stars {
+width: 2px;
+height: 2px;
+border-radius: 50%;
+background-color: #ffffff;
+animation-name: twinkle;
+animation-iteration-count: infinite;
+position: absolute;
+}
+
+.star1 {
+margin-top: 10%;
+margin-left: 10%;
+animation-duration: 2s;
+}
+.star2 {
+margin-top: 20%;
+margin-left: 15%;
+animation-duration: 1s;
+}
+.star3 {
+margin-top: 25%;
+margin-left: 30%;
+animation-duration: 3s;
+}
+.star4 {
+margin-top: 5%;
+margin-left: 40%;
+animation-duration: 1.5s;
+}
+.star5 {
+margin-top: 15%;
+margin-left: 60%;
+animation-duration: 1s;
+}
+.star6 {
+margin-top: 18%;
+margin-left: 65%;
+animation-duration: 2.5s;
+}
+.star7 {
+margin-top: 13%;
+margin-left: 70%;
+animation-duration: 1.5s;
+}
+.star8 {
+margin-top: 1%;
+margin-left: 80%;
+animation-duration: 3.5s;
+}
+.star9 {
+margin-top: 7%;
+margin-left: 90%;
+animation-duration: 4s;
+}
+.star10 {
+margin-top: 8%;
+margin-left: 95%;
+animation-duration: 3.5s;
+}
+.star11 {
+margin-top: 30%;
+margin-left: 13%;
+animation-duration: 3.5s;
+}
+.star12 {
+margin-top: 20%;
+margin-left: 59%;
+animation-duration: 3.5s;
+}
+.star13 {
+margin-top: 9%;
+margin-left: 55%;
+animation-duration: 3.5s;
+}
+.star14 {
+margin-top: 29%;
+margin-left: 55%;
+animation-duration: 3.5s;
+}
+.star15 {
+margin-top: 28%;
+margin-left: 48%;
+animation-duration: 3.5s;
+}
+@keyframes twinkle {
+20% {
+ transform: scale(0.95);
+ opacity: 1.5;
+}
+}
+.tiny {
+width: 1px;
+height: 1px;
+}
+.white {
+background: white;
+}
+
+.redsun {
+position: absolute;  
+right: 20%; bottom: 67%;
+z-index: 9999;
+filter: blur(2px);
+border-radius: 200%;
+width: 10px; height: 10px;
+background: LemonChiffon;
+box-shadow: 0px 0px 0px rgba(255,255,255,0.5), 0px 0px 20px yellow, 0px 0px 20px yellow, 0px 0px 50px white;
+animation: blink-animation 0.1s steps(5, start) infinite;
+-webkit-animation: blink-animation .1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+to {
+ visibility: hidden;
+ transform: scale(1.05);
+}
+}
+@-webkit-keyframes blink-animation {
+to {
+ visibility: hidden;
+ transform: scale(1.05);
+}
+}
+
+.Dysnomia {
+height: 25px;
+width: 30px;
+display: block;
+position: absolute;
+z-index: 9999;
+top: 50%;
+right: 70%;
+transform: translate(-50%, 0);
+box-shadow: 0px 0px 0px rgba(255,255,255,0.5), 0px 0px 0px #a55c1b, 0px 0px 0px #a55c1b, 0px 0px 0px white;
+animation: planetcross 20s infinite; 
+}
+
+@keyframes planetcross {
+0% { right: 0%; }
+
+
+100% { right:100%;}
+}
